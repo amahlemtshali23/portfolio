@@ -45,13 +45,6 @@ CSS STRUCTURE:
     - Side Nav Bar
     - Overlay Navigation
   4.2 Homepage Slider
-  4.3 Section
-    - Hero Section
-    - Section Title
-    - Section Paddings
-    - Section Margins
-    - Section Bg Colors
-    - Content colors
   4.4 Homepage section
     - About us
     - Services
@@ -1208,7 +1201,7 @@ This is main CSS file that contains custom style rules used in this template
     display: flex;
     align-items: center;
     background-color: var(--dark-color);
-    padding: 40px;
+    padding: 15px;
     margin-right: 60px;
     transition: 0.5s all ease-out;
     width: 150px;
@@ -1247,8 +1240,6 @@ header {
 .nav-active header {
     position: relative;
 }
-
-/* header.fixed {} */
 
 header.nav-up {
     /*top: -(var(--header-height-min));*/
@@ -1509,8 +1500,8 @@ header.sticky #navbar ul.menu-list>li>a {
     top: 0;
     display: flex;
     align-items: center;
-    width: 20px;
-    height: 26px;
+    width: 40px;
+    height: 46px;
     cursor: pointer;
     transition: 0.5s all ease-out;
 }
@@ -1859,15 +1850,8 @@ body.nav-active .nav__block .nav__block-item {
 
 
 
-/* 4.2 Homepage Slider
+/* 4.2 Portfolio Slider
 --------------------------------------------------------------*/
-#left-content {
-    position: relative;
-    width: 52%;
-    height: 50px;
-}
-
-
 .main-slider .slick-slide {
     height: 77vh;
 }
@@ -1898,9 +1882,7 @@ body.nav-active .nav__block .nav__block-item {
 
 .button-container {
     display: flex;
-    position: absolute;
-    top: 900%;
-    left: 88%;
+    position: relative;
 }
 
 .button-container button.slick-arrow {
@@ -1990,179 +1972,6 @@ body.nav-active .nav__block .nav__block-item {
     }
 }
 
-/*----------------------------------------------*/
-/* 4.3 Section */
-/*----------------------------------------------*/
-/* Hero section
-/*----------------------------------------------*/
-.hero-section .hero-content {
-    padding-top: 18em;
-    padding-bottom: 10em;
-    display: flex;
-    align-items: center;
-}
-
-.hero-section {
-    position: relative;
-    color: #fff;
-}
-
-.hero-section::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(39, 39, 39, 0.4);
-    z-index: -1;
-}
-
-.hero-section,
-.hero-section h1,
-.hero-section a,
-.hero-section a:hover {
-    color: #fff;
-}
-
-.hero-section h1 {
-    font-size: 4em;
-}
-
-@media only screen and (max-width: 768px) {
-    .hero-section h1 {
-        font-size: 2em;
-    }
-
-    .hero-section .hero-content {
-        padding-top: 12em;
-        padding-bottom: 6em;
-    }
-}
-
-/*--- Section Title
------------------------------------------------*/
-.section-header {
-    position: relative;
-}
-
-.section-title {
-    font-size: 3.8em;
-    font-size: calc(1.8em + 2vw);
-    line-height: 1;
-    font-weight: 900;
-}
-
-.section-header .title span {
-    font-size: 14px;
-    color: #afafaf;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    padding-left: 30px;
-    position: relative;
-}
-
-.section-header span:before {
-    content: "";
-    border-bottom: 2px solid var(--accent-color);
-    position: absolute;
-    top: 9px;
-    left: 3px;
-    width: 14px;
-    align-items: center;
-}
-
-/* - Section Padding
---------------------------------------------------------------*/
-.padding-xsmall {
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-}
-
-.padding-small {
-    padding-top: 2em;
-    padding-bottom: 2em;
-}
-
-.padding-medium {
-    padding-top: 4em;
-    padding-bottom: 4em;
-}
-
-.padding-large {
-    padding-top: 7em;
-    padding-bottom: 7em;
-}
-
-.padding-xlarge {
-    padding-top: 9.5em;
-    padding-bottom: 9.5em;
-}
-
-.padding-2xlarge {
-    padding-top: 15em;
-    padding-bottom: 15em;
-}
-
-@media only screen and (max-width: 768px) {
-
-    .padding-small,
-    .padding-medium,
-    .padding-large,
-    .padding-xlarge {
-        padding-top: 2em;
-        padding-bottom: 2em;
-    }
-}
-
-/* - Section margin
---------------------------------------------------------------*/
-.margin-small {
-    margin-top: 3em;
-    margin-bottom: 3em;
-}
-
-.margin-medium {
-    margin-top: 4.5em;
-    margin-bottom: 4.5em;
-}
-
-.margin-large {
-    margin-top: 6em;
-    margin-bottom: 6em;
-}
-
-.margin-xlarge {
-    margin-top: 7.5em;
-    margin-bottom: 7.5em;
-}
-
-@media only screen and (max-width: 768px) {
-
-    .margin-small,
-    .margin-medium,
-    .margin-large,
-    .margin-xlarge {
-        margin-top: 1em;
-        margin-bottom: 1em;
-    }
-}
-
-/* - Section bg colors
---------------------------------------------------------------*/
-.bg-dark {
-    background: var(--dark-color);
-}
-
-.bg-grey {
-    background: var(--grey-color);
-}
-
-.content-light a,
-.content-light {
-    color: #fff;
-}
-
 /*====================================================================*/
 /* 5. CONTENT ELEMENTS */
 /*====================================================================*/
@@ -2225,18 +2034,48 @@ body.nav-active .nav__block .nav__block-item {
     position: absolute;
 }
 
-.LeftContent {
-    float: left;
-    margin: 0;
-    padding: 0;
+.content-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    padding-top: 150px;
 }
 
-.RightContent {
-    display: block;
-    float: right;
-    overflow-y: scroll;
-    width: 45%;
-    height: 520px;
+.img-scroll {
+    width: 50%;
+    position: relative;
+}
+
+.main-slider {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slider-item jarallax {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.button-container {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.project-description {
+    width: 50%;
+    padding: 20px;
+    padding-top: 0;
+    overflow-y: auto;
+}
+
+.project-description p {
+    margin-bottom: 10px;
 }
 
 .Content:after {

@@ -1347,7 +1347,7 @@ This is main CSS file that contains custom style rules used in this template
   display: flex;
   align-items: center;
   background-color: var(--dark-color);
-  padding: 40px;
+  padding: 15px;
   margin-right: 60px;
   transition: 0.5s all ease-out;
   width: 150px;
@@ -1645,8 +1645,8 @@ header.sticky #navbar ul.menu-list>li>a {
   top: 0;
   display: flex;
   align-items: center;
-  width: 20px;
-  height: 26px;
+  width: 40px;
+  height: 46px;
   cursor: pointer;
   transition: 0.5s all ease-out;
 }
