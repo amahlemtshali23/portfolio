@@ -2134,4 +2134,44 @@ body.nav-active .nav__block .nav__block-item {
         width: 50%;
         height: 50%;
     } */
+    .nav__list-item.active-nav a::after {
+        height: 4px;
+        opacity: 0;
+        left: 0;
+        width: 100%;
+    }
+
+        .main-logo a {
+            font-family: "playfair display", Georgia, serif;
+            font-size: 2.5em;
+            color: #fff;
+            margin: 0 auto;
+            transition: 0.5s all ease-out;
+        }
+    
+        .main-logo {
+            height: var(--header-height);
+            display: flex;
+            align-items: center;
+            background-color: var(--dark-color);
+            padding: 0px;
+            margin-right: 60px;
+            transition: 0.5s all ease-out;
+            width: 80px;
+            position: absolute;
+            z-index: 1;
+        }
+    
+        /* .padding-small,
+        .padding-medium,
+        .padding-large,
+        .padding-xlarge {
+            padding-top: 7em;
+            padding-bottom: 1em;
+        } */
+    
+        .col {
+            width: 100%;
+            /* Change the width to 100% for small screens */
+        }
 }
