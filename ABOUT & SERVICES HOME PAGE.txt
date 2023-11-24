@@ -1,0 +1,11 @@
+ABOUT: 
+As a creative spirit immersed in the intricate artistry of creating from inception to fruition, my fascination with the interplay of diverse textiles and materials harmonizes seamlessly with my extensive expertise in Interior Design. Each project becomes a canvas for me to weave together a tapestry of innovation and functionality, drawing inspiration from a myriad of influences.
+My relentless pursuit of excellence is rooted in an unwavering commitment to pushing boundaries and reshaping spaces through an amalgamation of imagination and technical proficiency. With a foundation built on a passion for architecture and design, I embrace each challenge as an opportunity for growth, constantly honing my skills to translate visions into tangible, breathtaking realities. This journey is not just about creating spaces; it's about crafting experiences that resonate deeply and leave an indelible mark on the lives of those who inhabit them.
+
+SERVICES: 
+1.	Technical drawings 
+Draw up drawing sets, on Revit and AutoCAD, that include plan views, sections, elevations, and intricate detail drawings with detailed specifications. 
+2.	3D modelling 
+Develop 3D models using SketchUp and Blender, bringing designs to reality.
+3.	Photo realistic rendering
+Elevating the design vision into photo realistic visual experiences, harnessing the power of Enscape, Lumion, and Twinmotion.
