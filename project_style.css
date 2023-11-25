@@ -2187,7 +2187,6 @@ body.nav-active .nav__block .nav__block-item {
             height: var(--header-height);
             display: flex;
             align-items: center;
-            background-color: var(--dark-color);
             padding: 0px;
             margin-right: 60px;
             transition: 0.5s all ease-out;
