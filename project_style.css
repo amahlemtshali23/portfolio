@@ -98,12 +98,14 @@ CSS STRUCTURE:
 
 /* Theme Colors */
 :root {
-    --accent-color: #C5A992;
+    --accent-color: #e08dac; /* button color*/
     --dark-color: #2f2f2f;
     --grey-color: #f1f1f1;
+    --bg-grey-color: #e6e8e6;
     --body-text-color: #757575;
     --light-text-color: #afafaf;
-    --dark-text-color: #2f2f2f;
+    --dark-text-color: #201e1f;
+    --section-dark-color: #417b5a;
 }
 
 /* Fonts */
@@ -199,6 +201,11 @@ h6.light,
     --bs-gutter-x: 2.5rem;
 }
 
+ body {
+     /*background color */
+     background-color: #E5e8e6;
+ }
+
 /* Dropdown */
 .dropdown-menu {
     --bs-dropdown-border-radius: 0;
@@ -277,6 +284,14 @@ h6.light,
 /* text white */
 .text-white {
     --heading-color: var(--bs-light);
+    --bs-breadcrumb-item-active-color: var(--bs-light);
+    --bs-breadcrumb-divider-color: var(--bs-light);
+    --bs-link-color-rgb: var(--bs-light-rgb);
+    --bs-link-hover-color-rgb: var(--bs-light-rgb);
+}
+
+.text-dark {
+    --heading-color: var(--dark-text-color);
     --bs-breadcrumb-item-active-color: var(--bs-light);
     --bs-breadcrumb-divider-color: var(--bs-light);
     --bs-link-color-rgb: var(--bs-light-rgb);
@@ -383,7 +398,7 @@ a {
 }
 
 a:hover {
-    color: #111;
+    color: var(--accent-color);
     text-decoration: none;
 }
 
@@ -1200,7 +1215,7 @@ This is main CSS file that contains custom style rules used in this template
     height: var(--header-height);
     display: flex;
     align-items: center;
-    background-color: var(--dark-color);
+    background-color: var(--accent-color);
     padding: 15px;
     margin-right: 60px;
     transition: 0.5s all ease-out;
@@ -1472,13 +1487,13 @@ header.sticky #navbar ul.menu-list>li>a {
 .side-nav-bar #menu-toggle:checked~.menu-btn>span::before {
     top: 0;
     transform: rotate(0);
-    background: #f6f6f6;
+    background: var(--accent-color);
 }
 
 .side-nav-bar #menu-toggle:checked~.menu-btn>span::after {
     top: 0;
     transform: rotate(90deg);
-    background: #f6f6f6;
+    background: var(--accent-color);
 }
 
 .side-nav-bar #menu-toggle:checked~.side-nav-menu {
@@ -1519,7 +1534,7 @@ header.sticky #navbar ul.menu-list>li>a {
     position: absolute;
     width: 100%;
     height: 2px;
-    background-color: #f6f6f6;
+    background-color: var(--accent-color);
     transition-duration: .25s;
 }
 
@@ -1531,6 +1546,10 @@ header.sticky #navbar ul.menu-list>li>a {
 .side-nav-bar .menu-btn>span::after {
     content: '';
     top: 8px;
+}
+
+.nav-grey-text{
+    color: rgba(255, 255, 255, 0.6);
 }
 
 /* hide white menu bar while displaying overlay menu */
@@ -1890,14 +1909,14 @@ body.nav-active .nav__block .nav__block-item {
     line-height: 0;
     font-weight: 900;
     color: #fff;
-    background: var(--dark-color);
+    background: var(--accent-color);
     padding: 10px;
     margin: 0;
 }
 
 .button-container button.slick-arrow:hover,
 .button-container button.slick-arrow:focus {
-    background: var(--accent-color);
+    background: var(--dark-color);
     outline: none;
 } 
 
