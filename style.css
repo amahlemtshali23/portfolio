@@ -1753,7 +1753,7 @@ header.sticky #navbar ul.menu-list>li>a {
   color: #fff;
   overflow: hidden;
   font-family: var(--heading-font);
-  font-size: 6vh;
+  font-size: 4vh;
   font-weight: 900;
   line-height: 1.15;
   letter-spacing: 3px;
@@ -2063,7 +2063,7 @@ body.nav-active .nav__block .nav__block-item {
 
 @media only screen and (max-width: 1399px) {
   .main-slider .banner-content h2.banner-title {
-    font-size: 4.5em;
+    font-size: 4em;
   }
 }
 
@@ -2073,7 +2073,7 @@ body.nav-active .nav__block .nav__block-item {
   }
 
   .main-slider .banner-content h2.banner-title {
-    font-size: 4em;
+    font-size: 3em;
   }
 }
 
@@ -2083,19 +2083,19 @@ body.nav-active .nav__block .nav__block-item {
   }
 
   .main-slider .banner-content h2.banner-title {
-    font-size: 3.5em;
+    font-size: 2em;
   }
 }
 
 @media only screen and (max-width: 876px) {
   .main-slider .banner-content h2.banner-title {
-    font-size: 3em;
+    font-size: 2em;
   }
 }
 
 @media only screen and (max-width: 753px) {
   .main-slider .banner-content h2.banner-title {
-    font-size: 3em;
+    font-size: 2em;
   }
 
   #intro .button-container {
@@ -2127,7 +2127,7 @@ body.nav-active .nav__block .nav__block-item {
 /*----------------------------------------------*/
 /* Hero section
 /*----------------------------------------------*/
-.hero-section .hero-content {
+/* .hero-section .hero-content {
   padding-top: 18em;
   padding-bottom: 10em;
   display: flex;
@@ -2170,7 +2170,7 @@ body.nav-active .nav__block .nav__block-item {
     padding-top: 12em;
     padding-bottom: 6em;
   }
-}
+} */
 
 /*--- Section Title
 -----------------------------------------------*/
@@ -3094,18 +3094,6 @@ footer#footer {
 
 .parallax-wrap .parallax-image {
   position: absolute;
-}
-
-.LeftContent {
-  float: left;
-  margin: 0;
-  padding: 0;
-}
-
-.RightContent {
-  float: right;
-  overflow: auto;
-  width: 45%;
 }
 
 .Content:after {

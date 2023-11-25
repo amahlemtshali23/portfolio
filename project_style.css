@@ -131,7 +131,7 @@ body {
 
     --bs-primary: #C5A992;
     --bs-secondary: #6c757d;
-    --bs-black: #111;
+    --bs-black: yellow;
     --bs-light: #F1F1F0;
     --bs-dark: #2f2f2f;
     --bs-gray: #9aa1a7;
@@ -1609,7 +1609,7 @@ header.sticky #navbar ul.menu-list>li>a {
     color: #fff;
     overflow: hidden;
     font-family: var(--heading-font);
-    font-size: 6vh;
+    font-size: 4vh;
     font-weight: 900;
     line-height: 1.15;
     letter-spacing: 3px;
@@ -1852,7 +1852,7 @@ body.nav-active .nav__block .nav__block-item {
 
 /* 4.2 Portfolio Slider
 --------------------------------------------------------------*/
-.main-slider .slick-slide {
+ .main-slider .slick-slide {
     height: 77vh;
 }
 
@@ -1899,7 +1899,7 @@ body.nav-active .nav__block .nav__block-item {
 .button-container button.slick-arrow:focus {
     background: var(--accent-color);
     outline: none;
-}
+} 
 
 @media only screen and (max-width: 1600px) {
     .main-slider .banner-content .btn-wrap {
@@ -1911,7 +1911,7 @@ body.nav-active .nav__block .nav__block-item {
     }
 }
 
-@media only screen and (max-width: 1399px) {
+ @media only screen and (max-width: 1399px) {
     .main-slider .banner-content h2.banner-title {
         font-size: 4.5em;
     }
@@ -2105,12 +2105,12 @@ body.nav-active .nav__block .nav__block-item {
         left: 0;
     }
 
-    /* .slider-item jarallax {
-        height: 100%;
+    .slider-item jarallax {
+        height: 60%;
         width: 100%;
         background-size: cover;
         background-position: center;
-    } */
+    }
 
     .project-description {
         height: 27vh;
@@ -2119,6 +2119,21 @@ body.nav-active .nav__block .nav__block-item {
         overflow-y: auto;
         margin-top: 50px;
     }
+
+    /* .project-description {
+    height: 47vh;
+    width: 100%;
+    padding-top: 91px;
+    overflow-y: auto;
+    margin-top: -98px;
+    } */
+
+    /* .button-container {
+        position: absolute;
+        bottom: 65px;
+        right: -1px;
+    } */
+
     .project-description p {
         margin-bottom: 10px;
     }
@@ -2173,5 +2188,18 @@ body.nav-active .nav__block .nav__block-item {
         .col {
             width: 100%;
             /* Change the width to 100% for small screens */
+        }
+        .slider-item .jarallax img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+        .slider-item .jarallax img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
         }
 }
