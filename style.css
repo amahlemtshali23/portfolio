@@ -3140,6 +3140,7 @@ footer#footer {
 
     .main-logo {
       height: var(--header-height);
+      background-color: var(--accent-color);
       display: flex;
       align-items: center;
       padding: 0px;
