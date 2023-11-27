@@ -2400,6 +2400,10 @@ footer#footer {
       padding-bottom: 1em;
     }
 
+    .padding-xlarge {
+      margin-bottom: 50%;
+    }
+
     .col {
       width: 100%;
       /* Change the width to 100% for small screens */
