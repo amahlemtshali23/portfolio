@@ -12,6 +12,8 @@
 	<link rel="stylesheet" type="text/css" href="./css/vendor.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Chocolat-1.0.4/dist/css/chocolat.css">
+    <script src="./Chocolat-1.0.4/dist/js/chocolat.js"></script>
 	<link rel="stylesheet" type="text/css" href="./project_style.css">
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,31 +28,30 @@
         <div class="nav nav-overlay">
             <div class="nav__content">
                 <div class="container">
-				<div class="row p-4 p-md-0 flex-column-reverse flex-md-row g-md-5 nav__block">
-					<div class="col-md-5">
-						<ul class="nav__list">
-							<li class="nav__list-item"><a href="index.html" class="hover-target">Home</a>
-							</li>
-							<li class="nav__list-item"><a href="portfolio.html" class="hover-target">Portfolio</a></li>
-							<li class="nav__list-item"><a href="technical-portfolio.html" class="hover-target">Technical Portfolio</a></li>
-						</ul>
-					</div>
-					<div class="col-md-4 nav-grey-text d-none d-md-block">
-						<h3 class="nav-grey-text fw-bold nav__block-item">Contact info</h3>
-						<p class="nav-grey-text nav__block-item">Have a question or want to collaborate? I'd love to hear from you!</p>
-						<ul class="list-unstyled text-light nav__block-item">
-							<li class="menu-item">
-								<i class="icon icon-phone me-2"></i>+27 65 903 5754
-							</li>
-							<li class="menu-item">
-								<i class="icon icon-envelope-o me-2"></i><a href="mailto:amahlemtshali23@gmail.com"
-									class="nav-grey-text">amahlemtshali23@gmail.com</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-
+                    <div class="row p-4 p-md-0 flex-column-reverse flex-md-row g-md-5 nav__block">
+                        <div class="col-md-5">
+                            <ul class="nav__list">
+                                <li class="nav__list-item"><a href="index.html" class="hover-target">Home</a>
+                                </li>
+                                <li class="nav__list-item"><a href="portfolio.html" class="hover-target">Portfolio</a></li>
+                                <li class="nav__list-item"><a href="technical-portfolio.html" class="hover-target">Technical Portfolio</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 nav-grey-text d-none d-md-block">
+                            <h3 class="nav-grey-text fw-bold nav__block-item">Contact info</h3>
+                            <p class="nav-grey-text nav__block-item">Have a question or want to collaborate? I'd love to hear from you!</p>
+                            <ul class="list-unstyled text-light nav__block-item">
+                                <li class="menu-item">
+                                    <i class="icon icon-phone me-2"></i>+27 65 903 5754
+                                </li>
+                                <li class="menu-item">
+                                    <i class="icon icon-envelope-o me-2"></i><a href="mailto:amahlemtshali23@gmail.com"
+                                        class="nav-grey-text">amahlemtshali23@gmail.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+			    </div>
             </div>
         </div>
 
@@ -73,10 +74,14 @@
                             <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <img src="./images/SF8.png" class="d-block w-100" alt="Image 1">
+                                        <a class="chocolat-image" href="./images/SF8.png" title="Image 2">
+                                            <img src="./images/SF8.png" class="d-block w-100" id="enlargeableImage" alt="Image 1">
+                                        </a>
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="./images/OUTDOOR SEATING 1.png" class="d-block w-100" alt="Image 2">
+                                        <a class="chocolat-image" href="./images/OUTDOOR SEATING 1.png" title="Image 2">
+                                            <img src="./images/OUTDOOR SEATING 1.png" class="d-block w-100" alt="Image 2">
+                                        </a>
                                     </div>
                                     <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
                                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -116,6 +121,7 @@
         <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
         <script src="./js/plugins.js"></script>
         <script src="./js/script.js"></script>
+        
 </body>
     </body>
 </html>

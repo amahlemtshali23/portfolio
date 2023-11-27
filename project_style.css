@@ -1245,7 +1245,7 @@ This is main CSS file that contains custom style rules used in this template
 
 .side-nav-bar {
     position: absolute;
-    z-index: 170;
+    z-index: 11;
     right: 0;
     margin: 30px;
     display: block;
