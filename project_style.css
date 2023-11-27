@@ -2100,29 +2100,12 @@ body.nav-active .nav__block .nav__block-item {
     }
 
     .project-description {
-        height: 27vh;
+        margin-top: 5%;
+        margin-bottom: 15%;
         width: 100%;
-        padding-top: 67px;
+        padding-top: 5%;
+        padding-bottom: 5%;
         overflow-y: auto;
-        margin-top: 50px;
-    }
-
-    /* .project-description {
-    height: 47vh;
-    width: 100%;
-    padding-top: 91px;
-    overflow-y: auto;
-    margin-top: -98px;
-    } */
-
-    /* .button-container {
-        position: absolute;
-        bottom: 65px;
-        right: -1px;
-    } */
-
-    .project-description p {
-        margin-bottom: 10px;
     }
 
     .Content:after {
@@ -2130,12 +2113,6 @@ body.nav-active .nav__block .nav__block-item {
         clear: both;
         display: block;
     }
-
-    /* .main-slider img{
-        object-fit: fill;
-        width: 50%;
-        height: 50%;
-    } */
     .nav__list-item.active-nav a::after {
         height: 4px;
         opacity: 0;
@@ -2187,5 +2164,8 @@ body.nav-active .nav__block .nav__block-item {
             right: 0;
             bottom: 0;
             margin: auto;
+        }
+        #project_section .container {
+            padding-top: 35%;
         }
 }
