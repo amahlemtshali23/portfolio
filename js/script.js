@@ -105,65 +105,6 @@
     initTexts();
     animateTexts();
   }
-
-  // animate search box
-  var searchButton = function() {
-    // search box toggle
-    $('#header-wrap').on('click', '.search-toggle', function(e) {
-      var selector = $(this).data('selector');
-
-      $(selector).toggleClass('show').find('.search-input').focus();
-      $(this).toggleClass('active');
-
-      e.preventDefault();
-    });
-
-
-    // close when click off of container
-    $(document).on('click touchstart', function (e){
-      if (!$(e.target).is('.search-toggle, .search-toggle *, #header-wrap, #header-wrap *')) {
-        $('.search-toggle').removeClass('active');
-        $('#header-wrap').removeClass('show');
-      }
-    });
-  }
-
-  // initialize tabs
-  var jsTabs = function() {
-    // portfolio tabs
-    const tabs = document.querySelectorAll('[data-tab-target]')
-    const tabContents = document.querySelectorAll('[data-tab-content]')
-
-    tabs.forEach(tab => {
-      tab.addEventListener('click', () => {
-        const target = document.querySelector(tab.dataset.tabTarget)
-        tabContents.forEach(tabContent => {
-          tabContent.classList.remove('active')
-        })
-        tabs.forEach(tab => {
-          tab.classList.remove('active')
-        })
-        tab.classList.add('active')
-        target.classList.add('active')
-      })
-    });
-  }
-
-  // stick header on the top
-  var stickyHeader = function() {
-    // header menu
-    var StickyHeader = new hcSticky('#header.fixed', {
-      stickTo: 'body',
-      top: 0,
-      bottomEnd: 200,
-      responsive: {
-        1024: {
-          disable: true
-        }
-      }
-    });
-  }
-
   //Overlay Menu Navigation
   var overlayMenu = function () {
 
@@ -193,19 +134,15 @@
 
   // init Chocolat light box
   var initChocolat = function() {
-    Chocolat(document.querySelectorAll('.image-link'), {
-        imageSize: 'contain',
-        loop: true,
-    })
+    Chocolat(document.querySelectorAll('.chocolat-image'), {
+                imageSize: 'contain',
+                loop: 'true'
+            })
   }
 
   $(document).ready(function(){
-
-    stickyHeader();
-    searchButton();
     initSlider();
-    jsTabs();
-    // initChocolat();
+    initChocolat();
     overlayMenu();
 
     jarallax(document.querySelectorAll(".jarallax"));
