@@ -2366,6 +2366,25 @@ footer#footer {
   display: block;
 }
 
+.portfolio-item:hover .portfolio-popup {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.portfolio-popup h2 {
+  margin-bottom: 10px;
+}
+
+.portfolio-popup p {
+  line-height: 1.5;
+}
+
 @media(max-width: 1081px) {
   .nav__list-item.active-nav a::after {
       height: 4px;

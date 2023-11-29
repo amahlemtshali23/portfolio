@@ -140,17 +140,37 @@
             })
   }
 
+  var projectCard =  function(){
+    const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+    for (const portfolioItem of portfolioItems) {
+      const portfolioPopup = portfolioItem.querySelector('.portfolio-popup');
+
+      portfolioItem.addEventListener('mouseenter', () => {
+        portfolioPopup.style.display = 'block';
+      });
+
+      portfolioItem.addEventListener('mouseleave', () => {
+        setTimeout(() => {
+          portfolioPopup.style.display = 'none';
+        }, 100); // Hide popup after 100 milliseconds
+      });
+    }
+  }
+
+  
+
   $(document).ready(function(){
     initSlider();
     initChocolat();
     overlayMenu();
+    projectCard();
 
     jarallax(document.querySelectorAll(".jarallax"));
 
     jarallax(document.querySelectorAll(".jarallax-keep-img"), {
       keepImg: true,
     });
-
   }); // End of document ready
 
   // preloader
