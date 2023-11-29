@@ -140,23 +140,23 @@
             })
   }
 
-  var projectCard =  function(){
-    const portfolioItems = document.querySelectorAll('.portfolio-item');
+  // var projectCard =  function(){
+  //   const portfolioItems = document.querySelectorAll('.portfolio-item');
 
-    for (const portfolioItem of portfolioItems) {
-      const portfolioPopup = portfolioItem.querySelector('.portfolio-popup');
+  //   for (const portfolioItem of portfolioItems) {
+  //     const portfolioPopup = portfolioItem.querySelector('.portfolio-popup');
 
-      portfolioItem.addEventListener('mouseenter', () => {
-        portfolioPopup.style.display = 'block';
-      });
+  //     portfolioItem.addEventListener('mouseenter', () => {
+  //       portfolioPopup.style.display = 'block';
+  //     });
 
-      portfolioItem.addEventListener('mouseleave', () => {
-        setTimeout(() => {
-          portfolioPopup.style.display = 'none';
-        }, 100); // Hide popup after 100 milliseconds
-      });
-    }
-  }
+  //     portfolioItem.addEventListener('mouseleave', () => {
+  //       setTimeout(() => {
+  //         portfolioPopup.style.display = 'none';
+  //       }, 100); // Hide popup after 100 milliseconds
+  //     });
+  //   }
+  // }
 
   
 
@@ -164,7 +164,7 @@
     initSlider();
     initChocolat();
     overlayMenu();
-    projectCard();
+    // projectCard();
 
     jarallax(document.querySelectorAll(".jarallax"));
 

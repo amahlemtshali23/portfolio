@@ -2366,7 +2366,7 @@ footer#footer {
   display: block;
 }
 
-.portfolio-item:hover .portfolio-popup {
+/* .portfolio-item:hover .portfolio-popup {
   display: none;
   position: absolute;
   top: 100%;
@@ -2383,7 +2383,7 @@ footer#footer {
 
 .portfolio-popup p {
   line-height: 1.5;
-}
+} */
 
 @media(max-width: 1081px) {
   .nav__list-item.active-nav a::after {
