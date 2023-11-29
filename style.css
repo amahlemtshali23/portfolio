@@ -1295,6 +1295,10 @@ This is main CSS file that contains custom style rules used in this template
   z-index: 10;
 }
 
+.me-2{
+  color: var(--accent-color);
+}
+
 /* Header Menu
 --------------------------------------------------------------*/
 header .main-logo {
