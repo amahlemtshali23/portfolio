@@ -1702,6 +1702,10 @@ body.nav-active .nav__block .nav__block-item {
     .padding-xlarge {
         margin-top: 50%;
     }
+
+    #project_section .technical{
+        padding: 9%;
+    }
 }
 
 @media (max-width: 1100px) {
